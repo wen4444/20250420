@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>何子文的網站</title>
+    <!-- 連接 CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>我的個人網站</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="showSection('home')">首頁</a></li>
+            <li>
+                <a href="#intro" onclick="showSection('intro')">自我介紹</a>
+                <ul class="submenu">
+                    <li><a href="#about" onclick="showSection('about')">關於我</a></li>
+                    <li><a href="#travel" onclick="showSection('travel')">旅行小故事</a></li>
+                    <li><a href="#anime" onclick="showSection('anime')">喜歡的動漫</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#portfolio" onclick="showSection('portfolio')">作品集</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="https://wen4444.github.io/20250225/" target="_blank">
+                            20250225
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wen4444.github.io/20250304/" target="_blank">
+                            20250304
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wen4444.github.io/20250408/" target="_blank">
+                            20250304
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#videos" onclick="showSection('videos')">教學影片</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="https://cfchen58.synology.me/%E4%BA%92%E5%8B%95%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88/1132/week1/20250218_093352.mp4" target="_blank">
+                            製作HackMD筆記
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://cfchen58.synology.me/%E4%BA%92%E5%8B%95%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88/1132/week3/20250304_111708.mp4" target="_blank">
+                            利用AI做CSS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://cfchen58.synology.me/%E4%BA%92%E5%8B%95%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88/1132/week2/20250225_094853.mp4" target="_blank">
+                            開始做網頁
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="home" class="active">
+            <h2>歡迎来到我的網站</h2>
+            <div class="banner"></div>
+            <p>這里是我的個人網站，您可以通過上方的選單瀏覽不同的頁面内容。</p>
+            <p>在這個網站上，您可以了解我的個人介绍、查看我的作品集、参家測驗以及觀看教學影片。</p>
+            <h3>最新動態</h3>
+            <ul>
+                <li>昨天在樓梯間跌倒</li>
+                <li>期中考完蛋</li>
+                <li>早上睡過頭</li>
+                <li>出門忘記帶鑰匙</li>
+            </ul>
+        </section>
+        
+        <section id="intro" class="hidden">
+            <h2>自我介绍</h2>
+            <div class="intro-section">
+                <h3>關於我</h3>
+                <p>我是何子文，来自新北市汐止，目前就讀淡江大学教育科技學系。</p>
+                <p>我對教學與科技的结合充滿興趣，高中時期受到一位熱情的老師啟發，開始思考「學習」這件事的多種可能，也因此立下了從事教育有關行業的志向。</p>
+            </div>
+        </section>
+        
+        <section id="about" class="hidden">
+            <h2>關於我</h2>
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="https://scontent.ftpe11-1.fna.fbcdn.net/v/t39.30808-6/448441258_7496927153763952_2358198497435941170_n.jpg" 
+                         alt="個人照片">
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 我的個人網站。</p>
+    </footer>
+
+    <!-- 連接 JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>

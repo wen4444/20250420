@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #34495e;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    display: block;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #34495e;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.submenu li {
+    display: block;
+    padding: 5px 0;
+}
+
+.submenu li a {
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+nav > ul > li:hover .submenu {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://news-cdn.para-daily.com/wp-content/uploads/2024/04/22180824/0089pE32ly1holqahtergj30ky0egwfb.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;
+}
